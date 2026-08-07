@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1,p,label {
+            font-family:Georgia, 'Times New Roman', Times, serif
+        }
+
+        .centralizar {
+            text-align:center;
+        }
+
+        main {
+            display:flex;
+            justify-content:center
+        }
+
+        form{
+            background-color:rgb(255, 202, 228);
+            padding:20px;
+            width:60%;
+            display:grid;
+            border-radius: 10px;
+        }
+
+        img{
+            width: 20%;
+            display: block;
+            margin: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <img src="imagens/logo.png">
+        <h1 class="centralizar">Formulário de inscrição</h1>
+        <p class="centralizar">
+            Inscrição para experimentar e avaliar os deliciosos sorvetes da Sorveteria da Juju
+        </p>
+    </header>
+
+    <main>
+        <form>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome">
+
+            <label for="e-mail">E-mail:</label>
+            <input type="email" id="e-mail">
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone">
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha">
+
+            <label for="confirmacao-senha">Confirmação da senha:</label>
+            <input type="password" id="confirmacao-senha">
+
+            <p>Selecione os seus sabores favoritos:</p>
+            <div>
+                <label><input type="checkbox">Chocolate</label>
+                <label><input type="checkbox">Flocos</label>
+                <label><input type="checkbox">Ninho com Nutella</label>
+                <label><input type="checkbox">Baunilha</label>
+                <label><input type="checkbox">Morango do Amor</label>
+            </div>
+
+            <label for="comentario">Comentários sobre os sorvetes:</label>
+            <textarea rows="4" id="comentario"></textarea>
+
+            <button type="submit">Enviar inscrição</button>
+            
+        </form>
+    </main>
+</body>
+</html>
